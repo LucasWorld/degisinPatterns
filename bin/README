@@ -1,0 +1,1 @@
+This is a java project which shows the using of DesignPatterns;
