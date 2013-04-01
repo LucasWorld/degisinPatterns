@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<editmodel:ClassDiagramEditModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:editmodel="editmodel.xmi" xmlns:options="options.xmi" size="1119,422" id="com.lucas.designPatterns.strategyPattern" metadata="uml2-1.0" initialized="true" scrolledY="45" tag="10" key="32303037303533312D31302064657369676E5061747465726E73">
+  <children xsi:type="editmodel:ClassEditModel" name="ZhaoYun" location="280,11" size="96,67" id="com.lucas.designPatterns.strategyPattern/ZhaoYun" runTimeClassModel="main([Ljava.lang.String;)">
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <children xsi:type="editmodel:CompartmentEditModel" size="52,18">
+      <children xsi:type="editmodel:MethodEditModel" name="main" id="com.lucas.designPatterns.strategyPattern/ZhaoYun#main([Ljava.lang.String;)"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+  </children>
+  <children xsi:type="editmodel:InterfaceEditModel" targetConnections="//@children.2/@sourceConnections.0 //@children.3/@sourceConnections.0 //@children.4/@sourceConnections.0 //@children.5/@sourceConnections.0" name="IStrategy" location="660,145" size="99,81" id="com.lucas.designPatterns.strategyPattern/IStrategy" runTimeClassModel="operate()">
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <children xsi:type="editmodel:CompartmentEditModel" size="67,18">
+      <children xsi:type="editmodel:MethodEditModel" name="operate" id="com.lucas.designPatterns.strategyPattern/IStrategy#operate()"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+  </children>
+  <children xsi:type="editmodel:ClassEditModel" name="BackDoor" location="480,335" size="103,67" id="com.lucas.designPatterns.strategyPattern/BackDoor" runTimeClassModel="operate()">
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <children xsi:type="editmodel:CompartmentEditModel" size="67,18">
+      <children xsi:type="editmodel:MethodEditModel" name="operate" id="com.lucas.designPatterns.strategyPattern/BackDoor#operate()"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <sourceConnections xsi:type="editmodel:GeneralizationEditModel" autoLocated="true" id="com.lucas.designPatterns.strategyPattern/IStrategy&lt;-com.lucas.designPatterns.strategyPattern/BackDoor" source="//@children.2" target="//@children.1" targetEnd="//@children.2/@sourceConnections.0/@children.1" sourceEnd="//@children.2/@sourceConnections.0/@children.0" connectionRouterKind="Manual">
+      <children xsi:type="editmodel:AssociationEndEditModel" location="83,0" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="9,81"/>
+    </sourceConnections>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+  </children>
+  <children xsi:type="editmodel:ClassEditModel" name="GivenGreenLight" location="645,335" size="150,67" id="com.lucas.designPatterns.strategyPattern/GivenGreenLight" runTimeClassModel="operate()">
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <children xsi:type="editmodel:CompartmentEditModel" size="67,18">
+      <children xsi:type="editmodel:MethodEditModel" name="operate" id="com.lucas.designPatterns.strategyPattern/GivenGreenLight#operate()"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <sourceConnections xsi:type="editmodel:GeneralizationEditModel" autoLocated="true" id="com.lucas.designPatterns.strategyPattern/IStrategy&lt;-com.lucas.designPatterns.strategyPattern/GivenGreenLight" source="//@children.3" target="//@children.1" targetEnd="//@children.3/@sourceConnections.0/@children.1" sourceEnd="//@children.3/@sourceConnections.0/@children.0" connectionRouterKind="Manual">
+      <children xsi:type="editmodel:AssociationEndEditModel" location="64,0" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="49,81"/>
+    </sourceConnections>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+  </children>
+  <children xsi:type="editmodel:ClassEditModel" name="BlockEnemy" location="825,335" size="120,67" id="com.lucas.designPatterns.strategyPattern/BlockEnemy" runTimeClassModel="operate()">
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <children xsi:type="editmodel:CompartmentEditModel" size="67,18">
+      <children xsi:type="editmodel:MethodEditModel" name="operate" id="com.lucas.designPatterns.strategyPattern/BlockEnemy#operate()"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <sourceConnections xsi:type="editmodel:GeneralizationEditModel" autoLocated="true" id="com.lucas.designPatterns.strategyPattern/IStrategy&lt;-com.lucas.designPatterns.strategyPattern/BlockEnemy" source="//@children.4" target="//@children.1" targetEnd="//@children.4/@sourceConnections.0/@children.1" sourceEnd="//@children.4/@sourceConnections.0/@children.0" connectionRouterKind="Manual">
+      <children xsi:type="editmodel:AssociationEndEditModel" location="28,0" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="88,81"/>
+    </sourceConnections>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+  </children>
+  <children xsi:type="editmodel:ClassEditModel" name="Context" location="275,140" size="91,85" id="com.lucas.designPatterns.strategyPattern/Context" runTimeClassModel="Context(Lcom.lucas.designPatterns.strategyPattern.IStrategy;),operate()">
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <children xsi:type="editmodel:CompartmentEditModel" size="67,36">
+      <children xsi:type="editmodel:MethodEditModel" name="operate" id="com.lucas.designPatterns.strategyPattern/Context#operate()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="Context" id="com.lucas.designPatterns.strategyPattern/Context#Context(Lcom.lucas.designPatterns.strategyPattern.IStrategy;)"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <sourceConnections xsi:type="editmodel:AssociationEditModel" autoLocated="true" id="com.lucas.designPatterns.strategyPattern/Context@context+com.lucas.designPatterns.strategyPattern/IStrategy@strategy" source="//@children.5" target="//@children.1" targetEnd="//@children.5/@sourceConnections.0/@children.1" label="//@children.5/@sourceConnections.0/@children.2" sourceEnd="//@children.5/@sourceConnections.0/@children.0" connectionRouterKind="Manhattan">
+      <children xsi:type="editmodel:AssociationEndEditModel" name="context" location="91,45" id="com.lucas.designPatterns.strategyPattern/Context@context+com.lucas.designPatterns.strategyPattern/IStrategy@strategy|com.lucas.designPatterns.strategyPattern/Context#context" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" name="strategy" location="0,40" id="com.lucas.designPatterns.strategyPattern/Context@context+com.lucas.designPatterns.strategyPattern/IStrategy@strategy|com.lucas.designPatterns.strategyPattern/IStrategy#strategy" multiplicityLabel="//@children.5/@sourceConnections.0/@children.1/@children.1" roleLabel="//@children.5/@sourceConnections.0/@children.1/@children.0" navigable="true">
+        <children xsi:type="editmodel:LabelEditModel" name=" - strategy" location="603,164" size="50,14" anchorKind="LastPart"/>
+        <children xsi:type="editmodel:LabelEditModel" name="0..1" location="635,192" size="18,14" anchorKind="LastPart"/>
+      </children>
+      <children xsi:type="editmodel:WireLabelEditModel" size="0,14" anchorKind="MiddlePart"/>
+    </sourceConnections>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+  </children>
+  <diagramOptions xsi:type="options:ClassDiagramOptions" properties="wireOptions=1;Product=eUML2" autoName="false"/>
+  <boardSetting snapToGeometry="true" gridEnabled="true" gridSpacing="15,15" gridOrigin="0,0" rulerUnit="pixel" gridVisibility="false">
+    <leftRuler/>
+    <topRuler/>
+  </boardSetting>
+  <classDiagramPreferences xsi:type="editmodel:UMLClassDiagramPreference" showPopupBars="true" showConnectionHandles="true" attributeSorter="Natural" methodSorter="Natural" showClassStereotype="true" showPackageStereotype="true" showDependencyStereotype="true" showInterfaceStereotype="true" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+</editmodel:ClassDiagramEditModel>

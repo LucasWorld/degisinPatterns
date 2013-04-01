@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<editmodel:ClassDiagramEditModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:editmodel="editmodel.xmi" xmlns:options="options.xmi" size="1136,396" id="com.lucas.designPatterns.proxyPatterns" metadata="uml2-1.0" initialized="true" tag="10" key="32303037303533312D31302064657369676E5061747465726E73">
+  <children xsi:type="editmodel:InterfaceEditModel" targetConnections="//@children.1/@sourceConnections.0 //@children.2/@sourceConnections.0 //@children.3/@sourceConnections.0 //@children.2/@sourceConnections.1" name="Women" location="525,60" size="143,99" id="com.lucas.designPatterns.proxyPatterns/Women" runTimeClassModel="makeEyesWithMan(),happyWithMan()">
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <children xsi:type="editmodel:CompartmentEditModel" size="120,36">
+      <children xsi:type="editmodel:MethodEditModel" name="happyWithMan" id="com.lucas.designPatterns.proxyPatterns/Women#happyWithMan()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="makeEyesWithMan" id="com.lucas.designPatterns.proxyPatterns/Women#makeEyesWithMan()"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+  </children>
+  <children xsi:type="editmodel:ClassEditModel" name="PanJinLian" location="90,30" size="143,85" id="com.lucas.designPatterns.proxyPatterns/PanJinLian" runTimeClassModel="makeEyesWithMan(),happyWithMan()">
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <children xsi:type="editmodel:CompartmentEditModel" size="120,36">
+      <children xsi:type="editmodel:MethodEditModel" name="happyWithMan" location="68,130" id="com.lucas.designPatterns.proxyPatterns/PanJinLian#happyWithMan()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="makeEyesWithMan" id="com.lucas.designPatterns.proxyPatterns/PanJinLian#makeEyesWithMan()"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <sourceConnections xsi:type="editmodel:GeneralizationEditModel" autoLocated="true" id="com.lucas.designPatterns.proxyPatterns/Women&lt;-com.lucas.designPatterns.proxyPatterns/PanJinLian" source="//@children.1" target="//@children.0" targetEnd="//@children.1/@sourceConnections.0/@children.1" sourceEnd="//@children.1/@sourceConnections.0/@children.0" connectionRouterKind="Manual">
+      <children xsi:type="editmodel:AssociationEndEditModel" location="143,57" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="0,27"/>
+    </sourceConnections>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+  </children>
+  <children xsi:type="editmodel:ClassEditModel" name="WangPo" location="540,255" size="143,121" id="com.lucas.designPatterns.proxyPatterns/WangPo" runTimeClassModel="makeEyesWithMan(),WangPo(),happyWithMan(),WangPo(Lcom.lucas.designPatterns.proxyPatterns.Women;)">
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <children xsi:type="editmodel:CompartmentEditModel" size="120,72">
+      <children xsi:type="editmodel:MethodEditModel" name="WangPo" location="12,73" id="com.lucas.designPatterns.proxyPatterns/WangPo#WangPo(Lcom.lucas.designPatterns.proxyPatterns.Women;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="WangPo" id="com.lucas.designPatterns.proxyPatterns/WangPo#WangPo()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="happyWithMan" id="com.lucas.designPatterns.proxyPatterns/WangPo#happyWithMan()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="makeEyesWithMan" id="com.lucas.designPatterns.proxyPatterns/WangPo#makeEyesWithMan()"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <sourceConnections xsi:type="editmodel:GeneralizationEditModel" autoLocated="true" id="com.lucas.designPatterns.proxyPatterns/Women&lt;-com.lucas.designPatterns.proxyPatterns/WangPo" source="//@children.2" target="//@children.0" targetEnd="//@children.2/@sourceConnections.0/@children.1" sourceEnd="//@children.2/@sourceConnections.0/@children.0" connectionRouterKind="Manual">
+      <children xsi:type="editmodel:AssociationEndEditModel" location="63,0" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="78,99"/>
+    </sourceConnections>
+    <sourceConnections xsi:type="editmodel:AssociationEditModel" autoLocated="true" id="com.lucas.designPatterns.proxyPatterns/WangPo@wangPo+com.lucas.designPatterns.proxyPatterns/Women@women" source="//@children.2" target="//@children.0" targetEnd="//@children.2/@sourceConnections.1/@children.1" label="//@children.2/@sourceConnections.1/@children.2" sourceEnd="//@children.2/@sourceConnections.1/@children.0" connectionRouterKind="Manhattan">
+      <children xsi:type="editmodel:AssociationEndEditModel" name="wangPo" location="83,0" id="com.lucas.designPatterns.proxyPatterns/WangPo@wangPo+com.lucas.designPatterns.proxyPatterns/Women@women|com.lucas.designPatterns.proxyPatterns/WangPo#wangPo" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" name="women" location="141,99" id="com.lucas.designPatterns.proxyPatterns/WangPo@wangPo+com.lucas.designPatterns.proxyPatterns/Women@women|com.lucas.designPatterns.proxyPatterns/Women#women" multiplicityLabel="//@children.2/@sourceConnections.1/@children.1/@children.1" roleLabel="//@children.2/@sourceConnections.1/@children.1/@children.0" navigable="true">
+        <children xsi:type="editmodel:LabelEditModel" name=" - women" location="673,166" size="46,14" anchorKind="LastPart"/>
+        <children xsi:type="editmodel:LabelEditModel" name="0..1" location="641,166" size="18,14" anchorKind="LastPart"/>
+      </children>
+      <children xsi:type="editmodel:WireLabelEditModel" size="0,14" anchorKind="MiddlePart"/>
+    </sourceConnections>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+  </children>
+  <children xsi:type="editmodel:ClassEditModel" name="JiaShi" location="90,150" size="143,85" id="com.lucas.designPatterns.proxyPatterns/JiaShi" runTimeClassModel="makeEyesWithMan(),happyWithMan()">
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <children xsi:type="editmodel:CompartmentEditModel" size="120,36">
+      <children xsi:type="editmodel:MethodEditModel" name="happyWithMan" id="com.lucas.designPatterns.proxyPatterns/JiaShi#happyWithMan()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="makeEyesWithMan" id="com.lucas.designPatterns.proxyPatterns/JiaShi#makeEyesWithMan()"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <sourceConnections xsi:type="editmodel:GeneralizationEditModel" autoLocated="true" id="com.lucas.designPatterns.proxyPatterns/Women&lt;-com.lucas.designPatterns.proxyPatterns/JiaShi" source="//@children.3" target="//@children.0" targetEnd="//@children.3/@sourceConnections.0/@children.1" sourceEnd="//@children.3/@sourceConnections.0/@children.0" connectionRouterKind="Manual">
+      <children xsi:type="editmodel:AssociationEndEditModel" location="143,4" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="0,94"/>
+    </sourceConnections>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+  </children>
+  <children xsi:type="editmodel:ClassEditModel" name="XiMenQing" location="780,285" size="112,67" id="com.lucas.designPatterns.proxyPatterns/XiMenQing" runTimeClassModel="main([Ljava.lang.String;)">
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <children xsi:type="editmodel:CompartmentEditModel" size="52,18">
+      <children xsi:type="editmodel:MethodEditModel" name="main" id="com.lucas.designPatterns.proxyPatterns/XiMenQing#main([Ljava.lang.String;)"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+  </children>
+  <diagramOptions xsi:type="options:ClassDiagramOptions" properties="wireOptions=1;Product=eUML2" autoName="false"/>
+  <boardSetting snapToGeometry="true" gridEnabled="true" gridSpacing="15,15" gridOrigin="0,0" rulerUnit="pixel" gridVisibility="false">
+    <leftRuler/>
+    <topRuler/>
+  </boardSetting>
+  <classDiagramPreferences xsi:type="editmodel:UMLClassDiagramPreference" showPopupBars="true" showConnectionHandles="true" attributeSorter="Natural" methodSorter="Natural" showClassStereotype="true" showPackageStereotype="true" showDependencyStereotype="true" showInterfaceStereotype="true" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+</editmodel:ClassDiagramEditModel>
