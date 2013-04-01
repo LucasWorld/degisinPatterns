@@ -80,7 +80,7 @@ public class OuterUserInfo extends OuterUser implements IUserInfo {
 	 * @return Returns the baseInfo.
 	 * @uml.property name="baseInfo"
 	 */
-	public Map getBaseInfo() {
+	public Map<String ,String> getBaseInfo() {
 		return baseInfo;
 	}
 
@@ -91,7 +91,7 @@ public class OuterUserInfo extends OuterUser implements IUserInfo {
 	 *            The baseInfo to set.
 	 * @uml.property name="baseInfo"
 	 */
-	public void setBaseInfo(Map baseInfo) {
+	public void setBaseInfo(Map<String ,String> baseInfo) {
 		this.baseInfo = baseInfo;
 	}
 
@@ -101,7 +101,7 @@ public class OuterUserInfo extends OuterUser implements IUserInfo {
 	 * @return Returns the homeInfo.
 	 * @uml.property name="homeInfo"
 	 */
-	public Map getHomeInfo() {
+	public Map<String ,String> getHomeInfo() {
 		return homeInfo;
 	}
 
@@ -112,7 +112,7 @@ public class OuterUserInfo extends OuterUser implements IUserInfo {
 	 *            The homeInfo to set.
 	 * @uml.property name="homeInfo"
 	 */
-	public void setHomeInfo(Map homeInfo) {
+	public void setHomeInfo(Map<String ,String> homeInfo) {
 		this.homeInfo = homeInfo;
 	}
 
@@ -122,7 +122,7 @@ public class OuterUserInfo extends OuterUser implements IUserInfo {
 	 * @return Returns the officeInfo.
 	 * @uml.property name="officeInfo"
 	 */
-	public Map getOfficeInfo() {
+	public Map<String ,String> getOfficeInfo() {
 		return officeInfo;
 	}
 
@@ -133,7 +133,7 @@ public class OuterUserInfo extends OuterUser implements IUserInfo {
 	 *            The officeInfo to set.
 	 * @uml.property name="officeInfo"
 	 */
-	public void setOfficeInfo(Map officeInfo) {
+	public void setOfficeInfo(Map<String ,String> officeInfo) {
 		this.officeInfo = officeInfo;
 	}
 
