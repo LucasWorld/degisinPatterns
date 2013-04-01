@@ -1,5 +1,93 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<editmodel:ClassDiagramEditModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:editmodel="editmodel.xmi" xmlns:options="options.xmi" id="com.lucas.designPatterns.adapterPattern" metadata="uml2-1.0" tag="10" key="32303037303533312D31302064657369676E5061747465726E73">
+<editmodel:ClassDiagramEditModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:editmodel="editmodel.xmi" xmlns:options="options.xmi" size="1141,695" id="com.lucas.designPatterns.adapterPattern" metadata="uml2-1.0" initialized="true" tag="10" key="32303037303533312D31302064657369676E5061747465726E73">
+  <children xsi:type="editmodel:InterfaceEditModel" targetConnections="//@children.1/@sourceConnections.0 //@children.4/@sourceConnections.1" name="IUserInfo" location="435,30" size="148,171" id="com.lucas.designPatterns.adapterPattern/IUserInfo" runTimeClassModel="getHomeTelNumber(),getUserName(),getJobPosition(),getOfficeTelNumber(),getMobileNumber(),getHomeAddress()">
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <children xsi:type="editmodel:CompartmentEditModel" size="125,108">
+      <children xsi:type="editmodel:MethodEditModel" name="getUserName" id="com.lucas.designPatterns.adapterPattern/IUserInfo#getUserName()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getHomeAddress" id="com.lucas.designPatterns.adapterPattern/IUserInfo#getHomeAddress()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getMobileNumber" id="com.lucas.designPatterns.adapterPattern/IUserInfo#getMobileNumber()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getOfficeTelNumber" id="com.lucas.designPatterns.adapterPattern/IUserInfo#getOfficeTelNumber()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getJobPosition" id="com.lucas.designPatterns.adapterPattern/IUserInfo#getJobPosition()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getHomeTelNumber" id="com.lucas.designPatterns.adapterPattern/IUserInfo#getHomeTelNumber()"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+  </children>
+  <children xsi:type="editmodel:ClassEditModel" name="UserInfo" location="330,285" size="148,157" id="com.lucas.designPatterns.adapterPattern/UserInfo" runTimeClassModel="getHomeTelNumber(),getUserName(),getOfficeTelNumber(),getJobPosition(),getMobileNumber(),getHomeAddress()">
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <children xsi:type="editmodel:CompartmentEditModel" size="125,108">
+      <children xsi:type="editmodel:MethodEditModel" name="getHomeAddress" id="com.lucas.designPatterns.adapterPattern/UserInfo#getHomeAddress()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getHomeTelNumber" id="com.lucas.designPatterns.adapterPattern/UserInfo#getHomeTelNumber()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getJobPosition" id="com.lucas.designPatterns.adapterPattern/UserInfo#getJobPosition()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getMobileNumber" id="com.lucas.designPatterns.adapterPattern/UserInfo#getMobileNumber()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getOfficeTelNumber" id="com.lucas.designPatterns.adapterPattern/UserInfo#getOfficeTelNumber()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getUserName" id="com.lucas.designPatterns.adapterPattern/UserInfo#getUserName()"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <sourceConnections xsi:type="editmodel:GeneralizationEditModel" autoLocated="true" id="com.lucas.designPatterns.adapterPattern/IUserInfo&lt;-com.lucas.designPatterns.adapterPattern/UserInfo" source="//@children.1" target="//@children.0" targetEnd="//@children.1/@sourceConnections.0/@children.1" sourceEnd="//@children.1/@sourceConnections.0/@children.0" connectionRouterKind="Manual">
+      <children xsi:type="editmodel:AssociationEndEditModel" location="126,0" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="21,171"/>
+    </sourceConnections>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+  </children>
+  <children xsi:type="editmodel:InterfaceEditModel" targetConnections="//@children.3/@sourceConnections.0" name="IOuterUser" location="750,45" size="139,117" id="com.lucas.designPatterns.adapterPattern/IOuterUser" runTimeClassModel="getUserOfficeInfo(),getUserBaseInfo(),getUserHomeInfo()">
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <children xsi:type="editmodel:CompartmentEditModel" size="116,54">
+      <children xsi:type="editmodel:MethodEditModel" name="getUserBaseInfo" id="com.lucas.designPatterns.adapterPattern/IOuterUser#getUserBaseInfo()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getUserHomeInfo" id="com.lucas.designPatterns.adapterPattern/IOuterUser#getUserHomeInfo()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getUserOfficeInfo" id="com.lucas.designPatterns.adapterPattern/IOuterUser#getUserOfficeInfo()"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+  </children>
+  <children xsi:type="editmodel:ClassEditModel" targetConnections="//@children.4/@sourceConnections.0" name="OuterUser" location="855,240" size="139,103" id="com.lucas.designPatterns.adapterPattern/OuterUser" runTimeClassModel="getUserOfficeInfo(),getUserBaseInfo(),getUserHomeInfo()">
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <children xsi:type="editmodel:CompartmentEditModel" size="116,54">
+      <children xsi:type="editmodel:MethodEditModel" name="getUserBaseInfo" id="com.lucas.designPatterns.adapterPattern/OuterUser#getUserBaseInfo()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getUserHomeInfo" id="com.lucas.designPatterns.adapterPattern/OuterUser#getUserHomeInfo()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getUserOfficeInfo" id="com.lucas.designPatterns.adapterPattern/OuterUser#getUserOfficeInfo()"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <sourceConnections xsi:type="editmodel:GeneralizationEditModel" autoLocated="true" id="com.lucas.designPatterns.adapterPattern/IOuterUser&lt;-com.lucas.designPatterns.adapterPattern/OuterUser" source="//@children.3" target="//@children.2" targetEnd="//@children.3/@sourceConnections.0/@children.1" sourceEnd="//@children.3/@sourceConnections.0/@children.0" connectionRouterKind="Manual">
+      <children xsi:type="editmodel:AssociationEndEditModel" location="16,0" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="121,117"/>
+    </sourceConnections>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+  </children>
+  <children xsi:type="editmodel:ClassEditModel" name="OuterUserInfo" location="582,285" size="185,229" id="com.lucas.designPatterns.adapterPattern/OuterUserInfo" runTimeClassModel="getHomeTelNumber(),getUserName(),homeInfo,getJobPosition(),getOfficeTelNumber(),officeInfo,OuterUserInfo(),getMobileNumber(),getHomeAddress(),baseInfo">
+    <children xsi:type="editmodel:CompartmentEditModel" size="162,54">
+      <children xsi:type="editmodel:AttributeEditModel" name="baseInfo" id="com.lucas.designPatterns.adapterPattern/OuterUserInfo#baseInfo"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="homeInfo" id="com.lucas.designPatterns.adapterPattern/OuterUserInfo#homeInfo"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="officeInfo" id="com.lucas.designPatterns.adapterPattern/OuterUserInfo#officeInfo"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="125,126">
+      <children xsi:type="editmodel:MethodEditModel" name="OuterUserInfo" id="com.lucas.designPatterns.adapterPattern/OuterUserInfo#OuterUserInfo()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getHomeAddress" id="com.lucas.designPatterns.adapterPattern/OuterUserInfo#getHomeAddress()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getHomeTelNumber" id="com.lucas.designPatterns.adapterPattern/OuterUserInfo#getHomeTelNumber()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getJobPosition" id="com.lucas.designPatterns.adapterPattern/OuterUserInfo#getJobPosition()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getMobileNumber" id="com.lucas.designPatterns.adapterPattern/OuterUserInfo#getMobileNumber()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getOfficeTelNumber" id="com.lucas.designPatterns.adapterPattern/OuterUserInfo#getOfficeTelNumber()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getUserName" id="com.lucas.designPatterns.adapterPattern/OuterUserInfo#getUserName()"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <sourceConnections xsi:type="editmodel:GeneralizationEditModel" autoLocated="true" id="com.lucas.designPatterns.adapterPattern/OuterUser&lt;-com.lucas.designPatterns.adapterPattern/OuterUserInfo" source="//@children.4" target="//@children.3" targetEnd="//@children.4/@sourceConnections.0/@children.1" sourceEnd="//@children.4/@sourceConnections.0/@children.0" connectionRouterKind="Manual">
+      <children xsi:type="editmodel:AssociationEndEditModel" location="185,29" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="0,74"/>
+    </sourceConnections>
+    <sourceConnections xsi:type="editmodel:GeneralizationEditModel" autoLocated="true" id="com.lucas.designPatterns.adapterPattern/IUserInfo&lt;-com.lucas.designPatterns.adapterPattern/OuterUserInfo" source="//@children.4" target="//@children.0" targetEnd="//@children.4/@sourceConnections.1/@children.1" sourceEnd="//@children.4/@sourceConnections.1/@children.0" connectionRouterKind="Manual">
+      <children xsi:type="editmodel:AssociationEndEditModel" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="147,171"/>
+    </sourceConnections>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+  </children>
+  <children xsi:type="editmodel:ClassEditModel" name="App" location="112,103" size="75,67" id="com.lucas.designPatterns.adapterPattern/App" runTimeClassModel="main([Ljava.lang.String;)">
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <children xsi:type="editmodel:CompartmentEditModel" size="52,18">
+      <children xsi:type="editmodel:MethodEditModel" name="main" id="com.lucas.designPatterns.adapterPattern/App#main([Ljava.lang.String;)"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+  </children>
   <diagramOptions xsi:type="options:ClassDiagramOptions" properties="wireOptions=1;Product=eUML2" autoName="false"/>
   <boardSetting snapToGeometry="true" gridEnabled="true" gridSpacing="15,15" gridOrigin="0,0" rulerUnit="pixel" gridVisibility="false">
     <leftRuler/>
